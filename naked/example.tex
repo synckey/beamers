@@ -1,0 +1,73 @@
+\documentclass[english,german]{beamer}
+\usetheme{naked}
+% Try me
+%\usecolortheme{dark}
+
+\usepackage[utf8]{inputenc} % utf8 file encoding
+\usepackage[T1]{fontenc} % powerful pdf output encoding
+
+\title{A \LaTeX-Beamer Theme {\itshape for} Naked Presentations}
+\date{\today}
+\author{Andreas Zwinkau}
+
+\begin{document}
+
+\titlepage
+
+\begin{defnframe}{Naked Presentation}
+The \textbf{presenter} is the focus of attention,
+not her slides.
+\end{defnframe}
+
+\begin{frame}{title is hidden}
+\TeX\ is famous for type-setting math like \[
+   \sum_{i=1}^{n}\sum_{j=1}^{m} 
+   \frac{x_i}{x_i + \frac{x_j}{x_i+x_j}}
+\]
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+   \item Oh, the {\itshape dreaded} bullet points
+   \item you can do them, though
+   \item but you should not
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{enumerate}
+   \item Oh, the dreaded \emph{numbered} bullet points
+   \item you can do them, too
+   \item but you should not, too
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\begin{block}{A Block}
+   For elements with a title.
+\end{block}
+\end{frame}
+
+\begin{imageframe}{cat}
+   \color{black}
+   {\bf\Large Don't Hide!}
+   \vskip6.5cm
+   \hfill {\tiny\copyright~\url{http://www.flickr.com/photos/paolomargari/1992019542/}}
+\end{imageframe}
+
+\begin{frame}
+\begin{quote}
+   The artist is nothing without the gift, but the gift is nothing without work.
+
+   \hfill--- Emile Zola (1840-1902)
+\end{quote}
+\end{frame}
+
+\emptyslide
+
+\begin{wordframe}
+fin.
+\end{wordframe}
+
+\end{document}
+

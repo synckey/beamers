@@ -1,0 +1,125 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc} % utf8 file encoding
+\usepackage[T1]{fontenc} % powerful pdf output encoding
+\input{template_short.tex}
+
+%% use one of the two below
+%\colorlet{main}{red!50!black}
+\definecolor{dagrine}{RGB}{204,54,8}
+\colorlet{main}{dagrine}
+
+% \colorlet{main}{purple}
+
+%-------------------main body-------------------------%
+
+\author{Dwzb}
+\title{Presentation Title}
+\subtitle{sub Title}
+\date{January 1, 2018}
+
+\begin{document}
+
+    \frame[plain]{\titlepage}
+
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents
+    \end{frame}
+
+    \section{Page Title}
+
+    \begin{frame}
+        \frametitle{Page Title}
+
+        \vspace{0.4cm}
+
+        unordered list below
+
+        \begin{itemize}
+            \item The first item
+            \item The second item
+            \item The third item
+            \item The fourth item
+        \end{itemize}
+        Hello, here is some text without a meaning. This text should show what a printed text will look like at this place. sin2(α) + cos2(β) = 1. If you read this text, you will get no information E = mc2. Really? Is there no information? Is there a difference between this text and some nonsense like “Huardest gefburn”? Kjift – not at all! A blind text like this gives you information about the selected font, how the letters are written and
+        an impression of the look. √n a · √n b = √n ab. This text should contain all letters of the √na √a
+        alphabet and it should be written in of the original language. √n = n . There is no bb
+        need for special content, but the length of words should match the language. a √n b = √n a n b .
+
+    \end{frame}
+
+    \section{Display Theorem}
+
+    \subsection{first subsection}
+
+    \subsection{second subsection}
+
+
+
+    \begin{frame}
+        \frametitle{Display Theorem}
+        \begin{theorem}
+            $1 + 2 = 3$
+        \end{theorem}
+        \begin{proof}
+            $$1 + 1 = 2$$
+            $$1 + 1 + 1 = 3$$
+        \end{proof}
+    \end{frame}
+
+    \section{Sample frame title}
+
+    \begin{frame}
+        \frametitle{Sample frame title}
+        This is a text in second frame.
+        For the sake of showing an example.
+
+        \begin{itemize}
+            \item Text visible on slide 1
+            \item Text visible on slide 2
+            \item Text visible on slide 3
+        \end{itemize}
+
+        \vspace{0.3cm}
+
+        another example
+
+        \begin{itemize}
+            \itemsep0em
+            \item Text visible on slide 1
+            \item Text visible on slide 2
+            \item Text visible on slide 3
+        \end{itemize}
+        \begin{exampleblock}{test}
+            Test
+        \end{exampleblock}
+
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{中文Titile}
+        \begin{proof}
+            $$
+            \frac{1}{\displaystyle 1+
+            \frac{1}{\displaystyle 2+
+            \frac{1}{\displaystyle 3+x}}} +
+            \frac{1}{1+\frac{1}{2+\frac{1}{3+x}}}
+            $$
+            $$\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$$
+            \begin{equation}
+                x=y+3 \label{eq:xdef}
+            \end{equation}
+            In equation (\ref{eq:xdef}) we saw $\dots$
+        \end{proof}
+    \end{frame}
+    \begin{frame}
+        \frametitle{Also support 中文}
+        Cool, you can use it in Chinese with out any modification.\par
+        我和我的小伙伴们都惊呆了。
+    \end{frame}
+    \begin{frame}
+        \begin{center}
+            \LARGE{Thank you!}
+        \end{center}
+    \end{frame}
+\end{document} 

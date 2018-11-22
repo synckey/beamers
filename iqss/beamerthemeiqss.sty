@@ -1,0 +1,114 @@
+% Modified from beamerthemedefault.sty.
+% Original work Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+
+% Requirement
+\RequirePackage{tikz}
+\RequirePackage{amsmath}
+\RequirePackage{unicode-math}
+
+\mode<presentation>
+
+\hypersetup{colorlinks=true,allcolors=iqss@orange}
+
+\def \iqsssectiontitleheader {}
+
+\newcommand{\iqsssectiontitle}[1]{
+  \def \iqsssectiontitleheader{#1}
+}
+
+\@ifundefined{insertmainframenumber}
+{%
+  % \insertmainframenumber not defined
+  \newcommand{\insertpagenumber}{\inserttotalpagenumber}
+}
+{%
+  % \insertmainframenumber already defined
+}%
+
+
+%\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{footline}
+{ \usebeamercolor[fg]{page number in head/foot}%
+  \usebeamerfont{page number in head/foot}%
+  \hspace{1em}%\insertsectionhead%
+  \hfill%
+  \insertframenumber\,/\,\inserttotalframenumber%\hyperlinkappendixstart{\insertmainframenumber}
+  %\ifnum \thepage = \insertframeendpage{\small .}\else{\phantom{\small .}}\fi
+  \hspace{1em}
+  \vskip2pt%
+}
+
+%\titlegraphic{\includegraphics[width=\paperwidth]{header.png}}
+
+%\setbeamertemplate{title page}
+%{
+
+  %\begin{tikzpicture}[remember picture,overlay]
+  %  \node[anchor=north west,xshift=-1.2mm,yshift=1.2mm] at (current page.north west){%
+  %    \noindent\inserttitlegraphic\par
+  %$  };
+  %\end{tikzpicture}
+  %\vskip1em
+%  \vbox{}
+%  \vfill
+
+ % \begingroup
+%  \centering
+%    \usebeamercolor[fg]{title}\usebeamerfont{title}\inserttitle\\\medskip
+%    \begin{beamercolorbox}[center]{title}
+%      \ifx\insertsubtitle\@empty%
+%      \else%
+%        \medskip%
+%        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\\\medskip}%
+%      \fi
+%    \end{beamercolorbox}%
+%  \vspace{3em}
+%  \begin{beamercolorbox}[center]{author}
+%      \usebeamerfont{author}\insertauthor \medskip
+%    \end{beamercolorbox}
+
+ %   \begin{beamercolorbox}[center]{institute}
+%      \usebeamerfont{institute}\insertinstitute \medskip
+%    \end{beamercolorbox}
+%    \begin{beamercolorbox}[center]{date}
+%      \usebeamerfont{date}\insertdate  \medskip
+%    \end{beamercolorbox}
+
+%  \endgroup
+  %\vfill
+%}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+\usefonttheme{iqss}
+\usecolortheme{iqss}
+\useinnertheme{default}
+\useoutertheme{default}
+
+\setbeamertemplate{itemize items}[circle]
+
+\AtBeginSection[]{
+  \title{\insertsectionhead}
+  {
+    %\definecolor{white}{rgb}{0.776,0.357,0.157}
+    %\definecolor{iqss@orange}{rgb}{1,1,1}
+    \frame{
+      \frametitle{\iqsssectiontitleheader}
+      \tableofcontents[currentsection]
+    }
+  }
+}
+
+\mode
+<all>
+
+% Local Variables:
+% TeX-engine: xetex
+% End:
