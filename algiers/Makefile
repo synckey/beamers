@@ -1,4 +1,4 @@
-TARGET  = slides
+TARGET = algiers
 
 all: $(TARGET).pdf
 

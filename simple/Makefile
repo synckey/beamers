@@ -1,4 +1,4 @@
-TARGET  = example_short
+TARGET  = simple
 
 all: $(TARGET).pdf
 

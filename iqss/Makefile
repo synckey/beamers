@@ -1,4 +1,4 @@
-TARGET = beamer-demo
+TARGET = iqss
 
 all: $(TARGET).pdf
 

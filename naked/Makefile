@@ -1,4 +1,4 @@
-TARGET = example
+TARGET = naked
 
 all: $(TARGET).pdf
 
